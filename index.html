@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaishika Singh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><span class="grad">JS</span> <b>Jaishika Singh</b></a>
+  <button class="burger" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  <nav id="menu">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn btn-fill small">Let's Connect <i class="fa-solid fa-paper-plane"></i></a>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <p class="hi">Hi, I'm</p>
+    <h1 class="grad">Jaishika Singh</h1>
+    <p class="roles">Developer &nbsp;|&nbsp; Learner &nbsp;|&nbsp; Dreamer</p>
+    <p class="muted">I love building things, solving problems and turning ideas into real solutions. Currently exploring the world of AI, Web Development and beyond!</p>
+    <div class="btns">
+      <a href="#projects" class="btn btn-fill">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="resume.docx" download class="btn btn-line">Download Resume <i class="fa-solid fa-download"></i></a>
+    </div>
+    <div class="socials" id="heroSocials"></div>
+  </div>
+  <div class="hero-img">
+    <div class="blob"><img src="profile.jpeg" alt="Jaishika Singh" onerror="this.style.display='none'"></div>
+    <span class="dot d1"></span><span class="dot d2"></span>
+    <p class="quote">Good<br>Things<br>Take Time</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div>
+    <p class="eyebrow">About me</p>
+    <h2>A little about <span class="grad">me</span></h2>
+    <p class="muted">I'm a BTech student with a passion for technology, creativity and continuous learning. I enjoy working on projects that challenge me, be it web development, AI/NLP, or building useful tools. I believe in learning by doing and I'm always excited to explore new opportunities and grow.</p>
+    <a href="#experience" class="btn btn-line">Know More <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="cards" id="aboutCards"></div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <p class="eyebrow">My skills</p>
+  <h2>Technologies I <span class="grad">Work With</span></h2>
+  <div class="skills" id="skillsList"></div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="row-between">
+    <div>
+      <p class="eyebrow">My projects</p>
+      <h2 class="grad">Some Things I've Built</h2>
+    </div>
+    <a href="https://github.com/jaishika-17" target="_blank" class="link">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="projects" id="projectList"></div>
+</section>
+
+<!-- EXPERIENCE + EDUCATION -->
+<section class="section two-col" id="experience">
+  <div>
+    <p class="eyebrow">Experience</p>
+    <h3>My Journey</h3>
+    <ul class="timeline" id="expList"></ul>
+  </div>
+  <div class="edu-col">
+    <p class="eyebrow">Education</p>
+    <h3>My Education</h3>
+    <div id="eduList"></div>
+    <p class="muted italic">"Learning never stops, and neither do I."</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="cta">
+    <div class="cta-icon"><i class="fa-solid fa-paper-plane"></i></div>
+    <div class="cta-text">
+      <h4>Let's Build Something Great Together</h4>
+      <p>I'm always open to new opportunities, collaborations and interesting conversations.</p>
+    </div>
+    <button class="btn btn-fill" id="openForm"><i class="fa-regular fa-envelope"></i> Get In Touch</button>
+  </div>
+
+  <form class="form hidden" id="contactForm">
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Your email" required>
+    <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+    <button class="btn btn-fill" type="submit">Send Message</button>
+    <p class="status" id="formStatus"></p>
+  </form>
+</section>
+
+<footer class="footer">
+  <p id="copy"></p>
+  <div class="socials" id="footSocials"></div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
